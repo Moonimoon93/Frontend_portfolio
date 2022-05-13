@@ -9,7 +9,7 @@ function PageTransitions(){
     for(let i = 0; i < sectBtn.length; i++){
         sectBtn[i].addEventListener('click', function(){
             let currentActiveBtn = document.querySelectorAll('.active-btn');
-            currentActiveBtn[0].className = currentActiveBtn[0].className.replace('active-btn','');
+            currentActiveBtn[0].className = currentActiveBtn[0].className.replace(' active-btn','');
             this.className += ' active-btn'
         })
     }
@@ -20,7 +20,7 @@ function PageTransitions(){
             sectBtns.forEach((btn)=>{
                 btn.classList.remove('active')
             })
-            event.target.classList.add('active')
+            // event.target.classList.add('active')
 
             sections.forEach((section)=>{
                 section.classList.remove('active')
